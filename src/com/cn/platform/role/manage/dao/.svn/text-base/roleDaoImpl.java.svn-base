@@ -1,0 +1,29 @@
+package com.cn.platform.role.manage.dao;
+
+import java.util.List;
+
+import org.mybatis.spring.support.SqlSessionDaoSupport;
+
+import com.cn.platform.common.model.Role;
+import com.cn.platform.common.model.modelpage;
+
+
+
+
+
+public class roleDaoImpl extends SqlSessionDaoSupport implements IroleDao {
+
+	@Override
+	public List getRoleByList() {
+		// TODO Auto-generated method stub
+		List<Role> list = getSqlSession().selectList(
+				"RoleMapper.getRoleByRName");
+		return list;
+	}
+	public List getModelpageByuserName(String userName)
+	{
+		List<modelpage> list = getSqlSession().selectList("ModelPage.getModelpageByRName", userName);
+		return list;
+	}
+
+}

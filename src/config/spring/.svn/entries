@@ -1,0 +1,76 @@
+8
+
+dir
+1647
+https://192.168.10.60/svn/ZHLC/trunk/platform/src/config/spring
+https://192.168.10.60/svn/ZHLC
+
+
+
+2015-05-15T06:12:05.972052Z
+1647
+cuif
+
+
+svn:special svn:externals svn:needs-lock
+
+jdbc.oracle.properties
+file
+
+
+
+
+2015-05-14T06:33:22.097868Z
+b38474cf9ab10df5c0d03c1bfe8f52e1
+2015-05-15T06:12:05.972052Z
+1647
+cuif
+
+applicationContext-init.xml
+file
+1656
+
+
+
+2015-06-01T02:52:30.698130Z
+cdfcc7f01e19c4a91387fd3cd926a9ee
+2015-06-01T03:23:35.703836Z
+1656
+cuif
+
+applicationContext-dao.xml
+file
+1652
+
+
+
+2015-05-20T08:04:54.113196Z
+366c22e2a9f052820dcb13087c96dc4f
+2015-05-20T08:39:29.333924Z
+1652
+cuif
+
+applicationContext-bean.xml
+file
+1652
+
+
+
+2015-05-20T08:14:15.052158Z
+22793fb00d52f5a14b5ab647414403cb
+2015-05-20T08:39:29.333924Z
+1652
+cuif
+
+applicationContext-common.xml
+file
+1652
+
+
+
+2015-05-20T08:18:39.401153Z
+dd8ff640010034db0065ff663c784bac
+2015-05-20T08:39:29.333924Z
+1652
+cuif
+

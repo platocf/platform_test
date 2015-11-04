@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/ZHLC/!svn/ver/1647/trunk/platform/src
+END
+struts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ZHLC/!svn/ver/1652/trunk/platform/src/struts.xml
+END
+sqlMapConfigMybatis.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ZHLC/!svn/ver/1653/trunk/platform/src/sqlMapConfigMybatis.xml
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ZHLC/!svn/ver/1647/trunk/platform/src/log4j.xml
+END

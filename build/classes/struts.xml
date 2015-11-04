@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>    
+    
+<!DOCTYPE struts PUBLIC    
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"    
+    "http://struts.apache.org/dtds/struts-2.3.dtd">    
+    
+<struts>    
+    <constant name="struts.objectFactory" value="spring" />    
+    <constant name="struts.i18n.encoding" value="UTF-8" />    
+    <constant name="struts.i18n.reload" value="false" />    
+    <constant name="struts.configuration.xml.reload" value="false" />    
+    <constant name="struts.custom.i18n.resources" value="globalMessages" />    
+    <constant name="struts.action.extension" value="action,," />    
+    <constant name="struts.convention.package.locators.basePackage"    
+              value="com.hsinghsu.testSSI.action" />    
+    <constant name="struts.convention.result.path" value="/" />    
+    <constant name="struts.serve.static" value="true" />    
+    <constant name="struts.serve.static.browserCache" value="false" />    
+        <package name="roleactions" namespace="/role" extends="struts-default">
+			<action name="*" class="roleaction" method="{1}">
+				 <result name="roleUser" >/platform/authoritymanager/rolemanager/rolepreview.jsp</result>	 
+				 <result name="roleOperate">/platform/authoritymanager/rolemanager/roleoperate.jsp</result>
+				 <result name="roleOperateupdate">/platform/authoritymanager/rolemanager/roleupdate.jsp</result>
+				 <result name="roleadd">/platform/authoritymanager/rolemanager/roleadd.jsp</result>
+				 <result name="roleupdate">/platform/authoritymanager/rolemanager/roleupdate.jsp</result>
+			</action>
+		</package>
+</struts> 

@@ -1,0 +1,40 @@
+8
+
+dir
+1652
+https://192.168.10.60/svn/ZHLC/trunk/platform/src/com/cn/platform/role/manage/service
+https://192.168.10.60/svn/ZHLC
+
+
+
+2015-05-20T08:39:29.333924Z
+1652
+cuif
+
+
+svn:special svn:externals svn:needs-lock
+
+RoleServiceImpl.java
+file
+1653
+
+
+
+2015-05-26T07:21:32.232009Z
+246973374ee876df0c0e3f85fdb91829
+2015-05-26T07:42:18.313069Z
+1653
+cuif
+
+IroleService.java
+file
+1653
+
+
+
+2015-05-26T07:21:43.422813Z
+ff070f54d8b33db116815ca5c71325ec
+2015-05-26T07:42:18.313069Z
+1653
+cuif
+

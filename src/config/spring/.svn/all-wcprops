@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ZHLC/!svn/ver/1647/trunk/platform/src/config/spring
+END
+jdbc.oracle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ZHLC/!svn/ver/1647/trunk/platform/src/config/spring/jdbc.oracle.properties
+END
+applicationContext-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ZHLC/!svn/ver/1652/trunk/platform/src/config/spring/applicationContext-dao.xml
+END
+applicationContext-init.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ZHLC/!svn/ver/1656/trunk/platform/src/config/spring/applicationContext-init.xml
+END
+applicationContext-bean.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ZHLC/!svn/ver/1652/trunk/platform/src/config/spring/applicationContext-bean.xml
+END
+applicationContext-common.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ZHLC/!svn/ver/1652/trunk/platform/src/config/spring/applicationContext-common.xml
+END

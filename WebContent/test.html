@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.map{background: #f0ede5}
+.gridmax{border:solid 0px #ffffff}
+.gridmax td{border:solid 2px #ffffff}
+</style>
+<script type="text/javascript" src="jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="init.js"></script>
+</head>
+<body>
+
+<div class="map" width=100% height=500px>
+<img alt="" id='s' src="">
+<table class="gridmax" border="1" cellspacing="0" cellpadding="0">
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+</div>
+</body>
+</html>
+<script>
+$(document).ready(function()
+		{
+		var url="role/imageFlow.action";  
+		//alert($('#s'))
+		$('#s')[0].src=url;
+		initmap.initGrid();
+		})
+//画风络钱
+
+</script>

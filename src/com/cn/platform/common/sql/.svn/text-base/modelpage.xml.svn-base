@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>      
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"      
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ModelPage">
+	<!-- 查询 sp_role 里的 RRoleName（角色） -->
+	<select id="getModelpageByRName" parameterType="string" resultType="com.cn.platform.modelpage.manage.model.modelpage">
+		SELECT * FROM p_modelpage WHERE p_modelpage.id IN (
+			SELECT p_modelpageconfig.modelid FROM p_modelpageconfig WHERE p_modelpageconfig.roleid  IN (
+				SELECT p_users.U_RoleId FROM p_users WHERE p_users.U_EName = #{userName}))
+	</select>
+</mapper>
+     
+     

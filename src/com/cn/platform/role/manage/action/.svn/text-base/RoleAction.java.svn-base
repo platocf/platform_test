@@ -1,0 +1,57 @@
+package com.cn.platform.role.manage.action;
+
+import org.apache.struts2.ServletActionContext;
+
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+
+import com.cn.platform.common.base.baseAction;
+import com.cn.platform.role.manage.service.IroleService;
+
+public class RoleAction extends baseAction {
+	IroleService roleservice;
+
+	public IroleService getRoleservice() {
+		return roleservice;
+	}
+	public void setRoleservice(IroleService roleservice) {
+		this.roleservice = roleservice;
+	}
+	//根据参数名获取参数值
+	private Object getValueFromParam(String param)
+	{
+		return ServletActionContext.getRequest().getParameter(param);
+	}
+	/***
+	 * 无参数
+	 */
+	public void getallname()
+	{
+		try {
+			
+			//JSONArray jo = JSONArray.fromObject(roleservice.getallrole());
+			this.sendAjaxResponse(roleservice.getallrole().get(0));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	/***
+	 * 所需参数:user_name_
+	 */
+	public void getModelPageByName()
+	{
+		String getUsername = getValueFromParam("user_name_")==null?"":getValueFromParam("user_name_").toString();
+		if(getUsername.equals(""))
+		{
+			this.sendAjaxResponse("user_name_参数错误!");
+			return;
+		}
+		try {
+			this.sendAjaxResponse(roleservice.getModelPageByName(getUsername));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

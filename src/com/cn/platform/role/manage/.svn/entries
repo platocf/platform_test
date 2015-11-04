@@ -1,0 +1,49 @@
+8
+
+dir
+1652
+https://192.168.10.60/svn/ZHLC/trunk/platform/src/com/cn/platform/role/manage
+https://192.168.10.60/svn/ZHLC
+
+
+
+2015-05-20T08:39:29.333924Z
+1652
+cuif
+
+
+svn:special svn:externals svn:needs-lock
+
+service
+dir
+
+model
+dir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
+
+dao
+dir
+
+action
+dir
+

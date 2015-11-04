@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>      
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"      
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="UserMapper">
+	<!-- 查询 sp_role 里的 RRoleName（角色） -->
+	<select id="getUserByRName" resultType="com.cn.platform.common.model.user">
+		select * from p_users where U_LoginName=#{U_LoginName}
+	</select>
+</mapper>
+     
+     

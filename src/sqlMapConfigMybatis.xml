@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>      
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"      
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">    
+    
+<configuration>
+	<settings>
+		<setting name="cacheEnabled" value="true"/>
+	</settings>
+	<!-- 定义实体类的别名 --> 
+	<typeAliases>
+<!-- 		<typeAlias type="com.smart.platform.login.model.User" alias="User"/> -->
+<!-- 		<typeAlias type="com.smart.platform.authoritymanager.rolemanager.model.Role" alias="Role"/> -->
+<!-- 		<typeAlias type="com.smart.platform.servercenter.servermanage.model.SpServerdescription" alias="ServerDesc"/> -->
+<!-- 		<typeAlias type="com.smart.platform.servercenter.servermanage.model.SpServer" alias="Server"/> -->
+<!-- 		<typeAlias type="com.smart.platform.servercenter.servermanage.model.SpProxyserver" alias="Proxyserver"/> -->
+<!-- 		<typeAlias type="com.smart.platform.servercenter.modelmanage.model.SpModel" alias="SpModel"/> -->
+<!-- 		<typeAlias type="com.smart.platform.authoritymanager.rolemanager.model.Role_Server" alias="Role_Server"/> -->
+		
+	</typeAliases>    
+    <mappers>    
+        <!-- 配置sql语句文件 -->    
+<!--         <mapper resource="com/smart/platform/sql/User.xml" />    -->
+<!--         <mapper resource="com/smart/platform/sql/Role.xml"/> -->
+<!--         <mapper resource="com/smart/platform/sql/Service.xml"/> -->
+<!--         <mapper resource="com/smart/platform/sql/Server.xml"/>  -->
+        <mapper resource="com/cn/platform/common/sql/Role.xml"/> 
+        <mapper resource="com/cn/platform/common/sql/modelpage.xml"/> 
+        <mapper resource="com/cn/platform/common/sql/user.xml"/> 
+        <mapper resource="com/cn/platform/common/sql/blockdata.xml"/> 
+    </mappers>    
+</configuration>  

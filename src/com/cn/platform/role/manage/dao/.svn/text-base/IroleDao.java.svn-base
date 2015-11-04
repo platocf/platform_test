@@ -1,0 +1,8 @@
+package com.cn.platform.role.manage.dao;
+
+import java.util.List;
+
+public interface IroleDao {
+	public List getRoleByList();
+	public List getModelpageByuserName(String userName);
+}

@@ -1,0 +1,25 @@
+package com.cn.platform.role.manage.service;
+
+import java.util.List;
+
+import com.cn.platform.role.manage.dao.IroleDao;
+
+public class RoleServiceImpl implements IroleService {
+	private IroleDao Roledao;
+	public IroleDao getRoledao() {
+		return Roledao;
+	}
+	public void setRoledao(IroleDao roledao) {
+		Roledao = roledao;
+	}
+	@Override
+	public List getallrole() {
+		// TODO Auto-generated method stub
+		return Roledao.getRoleByList();
+	}
+	public List getModelPageByName(String name)
+	{
+		return Roledao.getModelpageByuserName(name);
+	}
+
+}
